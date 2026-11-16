@@ -114,7 +114,7 @@ A desktop version built on Electron is planned. It will save notes directly to d
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) 20.19 or newer, with npm
+- [Bun](https://bun.sh/) 1.2 or newer
 - A modern browser (Chrome or Firefox)
 
 ### Setup
@@ -122,7 +122,7 @@ A desktop version built on Electron is planned. It will save notes directly to d
 ```bash
 git clone https://github.com/project59/mintype.git
 cd mintype
-npm install
+bun install
 ```
 
 Create a `.env` file in the project root:
@@ -152,7 +152,7 @@ Everything else works without a backend: creating a password, writing documents 
 ### Run it
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 Open the URL Vite prints (usually http://localhost:5173), click **Enter Workspace**, and choose **New Setup** to create a local password.
@@ -161,11 +161,11 @@ Open the URL Vite prints (usually http://localhost:5173), click **Enter Workspac
 
 | Command | What it does |
 | --- | --- |
-| `npm run dev` | Start the dev server with hot reload |
-| `npm run build` | Build the production bundle into `dist/` |
-| `npm run preview` | Serve the production build locally |
-| `npm run lint` | Run ESLint |
-| `npm run check:markdown` | Round-trip test for the editor's Markdown parsing and serialisation |
+| `bun run dev` | Start the dev server with hot reload |
+| `bun run build` | Build the production bundle into `dist/` |
+| `bun run preview` | Serve the production build locally |
+| `bun run lint` | Run ESLint |
+| `bun run check:markdown` | Round-trip test for the editor's Markdown parsing and serialisation |
 
 While the dev server is running, `/parity.html` compares how whiteboard Markdown boxes look when idle and while editing.
 

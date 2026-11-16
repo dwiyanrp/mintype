@@ -1,7 +1,7 @@
 // Round-trip check for the Markdown workspace export: sample workspaces are exported to a ZIP,
 // read back by the importer, and must come out with the same pages, hierarchy, order, settings
 // and content. It also imports a small Obsidian vault and Notion export. Run with
-// `npm run check:export` after changing markdownExport.js, markdownImport.js or importUtils.js.
+// `bun run check:export` after changing markdownExport.js, markdownImport.js or importUtils.js.
 import JSZip from 'jszip';
 import { createServer } from 'vite';
 

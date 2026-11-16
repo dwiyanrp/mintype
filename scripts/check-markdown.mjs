@@ -1,5 +1,5 @@
 // Round-trip check for the editor's Markdown: every document below is serialized to
-// Markdown, parsed back, and must come out identical. Run with `npm run check:markdown`
+// Markdown, parsed back, and must come out identical. Run with `bun run check:markdown`
 // after changing any node's Markdown tokenizer, parseMarkdown or renderMarkdown.
 import { Window } from 'happy-dom';
 import { createServer } from 'vite';

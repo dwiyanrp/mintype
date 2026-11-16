@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "check:markdown": "node scripts/check-markdown.mjs",
-    "check:export": "node scripts/check-export.mjs"
+    "check:markdown": "bun scripts/check-markdown.mjs",
+    "check:export": "bun scripts/check-export.mjs"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
