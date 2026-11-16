@@ -143,14 +143,25 @@ const router = createBrowserRouter([
 			}
 		]
 	}
-]);
+], {
+	future: {
+		v7_relativeSplatPath: true,
+		v7_fetcherPersist: true,
+		v7_normalizeFormMethod: true,
+		v7_partialHydration: true,
+		v7_skipActionErrorRevalidation: true
+	}
+});
 
 function App() {
 	useDynamicThemeColor();
 
 	return (
 		<>
-			<RouterProvider router={router} />
+			<RouterProvider
+				router={router}
+				future={{ v7_startTransition: true }}
+			/>
 			<Toaster
 				toastOptions={{
 					className: '!bg-indigo-500 !text-white !p-1 !px-2 !text-sm',
